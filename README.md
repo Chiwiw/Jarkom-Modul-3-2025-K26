@@ -49,10 +49,6 @@ iface eth5 inet static
 up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.224.0.0/16
 up echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
-Setelah itu konfigurasi untuk Node dengan IP Static seperti ini :
-```sh
-
-```
 
 
 ---
